@@ -13,6 +13,7 @@ import UserInfo from "./pages/UserInfo";
 import Breads from "./pages/Breads";
 import Drinks from "./pages/Drinks";
 import Desserts from "./pages/Desserts";
+import Receipt from "./pages/Receipt";
 
 const AppWrapper = () => {
   const location = useLocation();
@@ -49,6 +50,7 @@ const AppWrapper = () => {
         <Route path="/breads" element={<Breads />} />
         <Route path="/drinks" element={<Drinks />} />
         <Route path="/desserts" element={<Desserts />} />
+        <Route path="/receipt" element={<Receipt />} />
       </Routes>
     </>
   );

@@ -18,8 +18,9 @@ const Confirmation = () => {
 
   const totalPrice = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
+  // Navigate to receipt page instead of confirm page
   const handleGoToConfirmPage = () => {
-    navigate("/confirm");
+    navigate("/receipt", { state: { userInfo, cart } });
   };
 
   return (

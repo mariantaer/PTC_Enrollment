@@ -229,3 +229,24 @@ body {
   background-color: #7d7873;
 }
 
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 10px; /* give some padding around the content */
+    text-align: center; /* center content */
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.card-img-top {
+    width: 90%;      /* smaller than full width */
+    height: 200px;   /* keep fixed height */
+    object-fit: cover;
+    margin: 0 auto;  /* center the image */
+    border-radius: 8px; /* optional rounded corners */
+    display: block;  /* make margin auto work */
+}
